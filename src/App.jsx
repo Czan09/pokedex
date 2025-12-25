@@ -1,15 +1,13 @@
 import { useState } from 'react'
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
-
+import Pokedex from './components/Pokedex';
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <BrowserRouter>
-      
-    </BrowserRouter>
+     <Routes>
+      <Route path='/' element={<Pokedex/>}></Route>
+     </Routes>
     </>
   )
 }
