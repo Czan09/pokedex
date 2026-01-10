@@ -1,7 +1,9 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+  "pokemon": [
+    { "id": "1", "name": "Bulbasaur", "type": "Grass" },
+    { "id": "2", "name": "Charmander", "type": "Fire" },
+    { "id": "3", "name": "Squirtle", "type": "Water" },
+    { "id": "4", "name": "Pikachu", "type": "Electric" }
   ],
   "comments": [
     { "id": "1", "text": "a comment about post 1", "postId": "1" },
