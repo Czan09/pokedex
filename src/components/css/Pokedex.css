@@ -1,0 +1,76 @@
+/* Pokedex.css - Custom styles for Pokedex application */
+
+:root {
+    --primary: #dc2626;
+    --secondary: #fbbf24;
+    --dark: #1f2937;
+    --light: #f3f4f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--primary);
+    color: var(--light);
+    overflow-x: hidden;
+    padding-right: 18%;
+}
+
+.pokedex-container {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: 20fr 20fr 20fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.pokemon-card {
+    padding-right: 50%;
+    background: white;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    color: var(--dark);
+    overflow: visible;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.pokemon-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.pokemon-type {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
